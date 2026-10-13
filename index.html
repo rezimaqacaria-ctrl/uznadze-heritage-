@@ -48,7 +48,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <style>
-        /* Active Navigation Link Styling (Scrollspy Indicator) */
         .nav-link {
             position: relative;
             transition: color 0.3s ease;
@@ -96,7 +95,6 @@
             </div>
 
             <div class="flex items-center space-x-3">
-                <!-- Theme Toggle Button -->
                 <button id="themeToggle" aria-label="Toggle theme" class="p-2.5 rounded-full border border-cream-200 dark:border-slate-800 bg-cream-50 dark:bg-slate-900 text-charcoal-800 dark:text-amber-400 hover:border-bronze-500 transition duration-200">
                     <span id="themeIcon">🌙</span>
                 </button>
@@ -108,70 +106,56 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="overview" class="relative pt-36 pb-24 border-b border-cream-200 dark:border-slate-800 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Hero Content -->
-                <div class="lg:col-span-7 space-y-8">
-                    <div class="inline-flex items-center space-x-3 border-b border-bronze-500/40 pb-2">
-                        <span class="text-xs uppercase tracking-[0.2em] font-semibold text-bronze-600 dark:text-gold-400">Architectural Heritage · Central Tbilisi</span>
-                    </div>
+    <!-- Hero Section (Full-Width Background Image Style) -->
+    <section id="overview" class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden border-b border-cream-200 dark:border-slate-800">
+        <div class="absolute inset-0 bg-cover bg-center opacity-30 dark:opacity-25 scale-105 transition transform duration-1000" style="background-image: url('phasade.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#FDFBF7] dark:from-[#0B0F17] via-[#FDFBF7]/80 dark:via-[#0B0F17]/80 to-transparent"></div>
 
-                    <h1 class="text-4xl sm:text-6xl font-serif text-charcoal-900 dark:text-white leading-[1.15]">
-                        1,429 m² Historic Landmark <br>
-                        <span class="italic font-normal text-bronze-500 dark:text-gold-400">Restored Heritage Flagship Property</span>
-                    </h1>
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center space-y-8">
+            <div class="inline-flex items-center space-x-2 border-b border-bronze-500/40 pb-2">
+                <span class="text-xs uppercase tracking-[0.2em] font-semibold text-bronze-600 dark:text-gold-400">Architectural Heritage · Central Tbilisi</span>
+            </div>
 
-                    <p class="text-base sm:text-lg text-charcoal-600 dark:text-slate-300 leading-relaxed font-light max-w-2xl">
-                        A meticulously restored 19th-century architectural flagship in central Tbilisi. Engineered for single-tenant autonomy with European EBRD efficiency standards, private courtyard, rooftop terrace, and dedicated parking.
-                    </p>
+            <h1 class="text-4xl sm:text-6xl font-serif text-charcoal-900 dark:text-white leading-[1.15]">
+                1,429 m² Historic Landmark <br>
+                <span class="italic font-normal text-bronze-500 dark:text-gold-400">Restored Heritage Flagship Property</span>
+            </h1>
 
-                    <!-- Key Metrics Line -->
-                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-4 border-t border-cream-200 dark:border-slate-800">
-                        <div>
-                            <p class="text-[10px] uppercase tracking-widest text-charcoal-600 dark:text-slate-400">Total Area</p>
-                            <p class="text-2xl font-serif text-charcoal-900 dark:text-white mt-1">1,429 m²</p>
-                        </div>
-                        <div>
-                            <p class="text-[10px] uppercase tracking-widest text-charcoal-600 dark:text-slate-400">Starting Rent</p>
-                            <p class="text-2xl font-serif text-bronze-600 dark:text-gold-400 mt-1">$18,000</p>
-                        </div>
-                        <div>
-                            <p class="text-[10px] uppercase tracking-widest text-charcoal-600 dark:text-slate-400">Courtyard & Park</p>
-                            <p class="text-2xl font-serif text-charcoal-900 dark:text-white mt-1">245 m²</p>
-                        </div>
-                        <div>
-                            <p class="text-[10px] uppercase tracking-widest text-charcoal-600 dark:text-slate-400">Private Parking</p>
-                            <p class="text-2xl font-serif text-charcoal-900 dark:text-white mt-1">5-6 Slots</p>
-                        </div>
-                    </div>
+            <p class="text-base sm:text-lg text-charcoal-600 dark:text-slate-300 leading-relaxed font-light max-w-2xl mx-auto">
+                A meticulously restored 19th-century architectural flagship in central Tbilisi. Engineered for single-tenant autonomy with European EBRD efficiency standards, private courtyard, rooftop terrace, and dedicated parking.
+            </p>
 
-                    <!-- Call to Action Buttons -->
-                    <div class="flex flex-col sm:flex-row items-center gap-4 pt-4">
-                        <a href="#plans" class="w-full sm:w-auto bg-charcoal-900 dark:bg-gold-500 hover:bg-bronze-500 dark:hover:bg-gold-600 text-cream-50 dark:text-dark-900 uppercase text-xs tracking-widest font-semibold px-8 py-4 transition duration-300 text-center">
-                            Explore Floor Plans
-                        </a>
-                        <a href="82-Uznadze-Presentation.pdf" download class="w-full sm:w-auto bg-cream-100 dark:bg-slate-800 hover:bg-cream-200 dark:hover:bg-slate-700 text-charcoal-900 dark:text-white border border-cream-200 dark:border-slate-700 uppercase text-xs tracking-widest font-semibold px-8 py-4 transition duration-300 text-center flex items-center justify-center space-x-2">
-                            <svg class="w-4 h-4 text-bronze-600 dark:text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                            </svg>
-                            <span>Download Spec Sheet (PDF)</span>
-                        </a>
-                    </div>
+            <!-- Key Metrics Line -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-4 border-t border-cream-200 dark:border-slate-800 text-left max-w-3xl mx-auto">
+                <div>
+                    <p class="text-[10px] uppercase tracking-widest text-charcoal-600 dark:text-slate-400">Total Area</p>
+                    <p class="text-2xl font-serif text-charcoal-900 dark:text-white mt-1">1,429 m²</p>
                 </div>
-
-                <!-- Hero Image Frame -->
-                <div class="lg:col-span-5 relative">
-                    <div class="relative bg-cream-100 dark:bg-slate-900 p-3 border border-cream-200 dark:border-slate-800 shadow-sm">
-                        <img src="phasade.jpg" alt="82 D. Uznadze Facade" class="w-full h-[520px] object-cover filter contrast-[1.02]">
-                        <div class="p-4 bg-[#FDFBF7] dark:bg-[#0B0F17] mt-3 border border-cream-200 dark:border-slate-800 text-center">
-                            <p class="text-xs uppercase tracking-widest font-serif text-charcoal-800 dark:text-slate-300">Facade View — 82 D. Uznadze St.</p>
-                        </div>
-                    </div>
+                <div>
+                    <p class="text-[10px] uppercase tracking-widest text-charcoal-600 dark:text-slate-400">Starting Rent</p>
+                    <p class="text-2xl font-serif text-bronze-600 dark:text-gold-400 mt-1">$18,000</p>
                 </div>
+                <div>
+                    <p class="text-[10px] uppercase tracking-widest text-charcoal-600 dark:text-slate-400">Courtyard & Park</p>
+                    <p class="text-2xl font-serif text-charcoal-900 dark:text-white mt-1">245 m²</p>
+                </div>
+                <div>
+                    <p class="text-[10px] uppercase tracking-widest text-charcoal-600 dark:text-slate-400">Private Parking</p>
+                    <p class="text-2xl font-serif text-charcoal-900 dark:text-white mt-1">5-6 Slots</p>
+                </div>
+            </div>
 
+            <!-- Call to Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#plans" class="w-full sm:w-auto bg-charcoal-900 dark:bg-gold-500 hover:bg-bronze-500 dark:hover:bg-gold-600 text-cream-50 dark:text-dark-900 uppercase text-xs tracking-widest font-semibold px-8 py-4 transition duration-300 text-center">
+                    Explore Floor Plans
+                </a>
+                <a href="82-Uznadze-Presentation.pdf" download class="w-full sm:w-auto bg-cream-100 dark:bg-slate-800 hover:bg-cream-200 dark:hover:bg-slate-700 text-charcoal-900 dark:text-white border border-cream-200 dark:border-slate-700 uppercase text-xs tracking-widest font-semibold px-8 py-4 transition duration-300 text-center flex items-center justify-center space-x-2">
+                    <svg class="w-4 h-4 text-bronze-600 dark:text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Download Spec Sheet (PDF)</span>
+                </a>
             </div>
         </div>
     </section>
@@ -545,7 +529,6 @@
         const themeIcon = document.getElementById('themeIcon');
         const htmlElement = document.documentElement;
 
-        // System or saved preference check
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             htmlElement.classList.add('dark');
             themeIcon.textContent = '☀️';
